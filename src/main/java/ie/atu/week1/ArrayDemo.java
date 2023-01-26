@@ -18,22 +18,17 @@ public class ArrayDemo {
 
         Scanner myScanner = new Scanner(System.in);
 
-/*
         try
         {
             System.out.println("Please enter an integer number: ");
-            myElementArray.add(10, myScanner.nextInt());
+            myElementArray.add(myScanner.nextInt());
+            loop(myElementArray);
         }
         catch (InputMismatchException | IndexOutOfBoundsException e)
         {
-            System.out.println("Cannot proceed. There was an error with your input.");
+            System.out.print("Cannot proceed. There was an error with your input.");
             System.out.println(e);
         }
-
- */
-        System.out.println("Please enter an integer number: ");
-        myElementArray.add(10, myScanner.nextInt());
-        System.out.println("The new element added through user input is: " + myElementArray.get(10));
 
         System.out.println("\n\nThe program ended.");
     }
