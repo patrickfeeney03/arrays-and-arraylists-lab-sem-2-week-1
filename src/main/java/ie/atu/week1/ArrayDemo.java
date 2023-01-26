@@ -12,14 +12,9 @@ public class ArrayDemo {
         {
             myElementArray.add(100 * i);
         }
+        loop(myElementArray);
 
-        int indexValue = 0;
 
-        for(int x:myElementArray)
-        {
-            System.out.println("Element at index " + indexValue + ": " + x);
-            indexValue++;
-        }
 
         Scanner myScanner = new Scanner(System.in);
 
@@ -38,13 +33,19 @@ public class ArrayDemo {
  */
         System.out.println("Please enter an integer number: ");
         myElementArray.add(10, myScanner.nextInt());
-        System.out.println("The new element added through user input is:" + myElementArray.get(10));
+        System.out.println("The new element added through user input is: " + myElementArray.get(10));
 
         System.out.println("\n\nThe program ended.");
     }
 
     public static void loop(ArrayList<Integer> localArray)
     {
-        System.out.println("temp print");
+        int indexValue = 0;
+
+        for(int x:localArray)
+        {
+            System.out.println("Element at index " + indexValue + ": " + x);
+            indexValue++;
+        }
     }
 }
