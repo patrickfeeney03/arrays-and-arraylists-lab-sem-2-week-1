@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ArrayDemo {
+public class ArrayListsDemo {
     public static void main(String[] args) {
         ArrayList<Integer> myElementArray = new ArrayList<>();
         for(int i = 1; i < 11; i++)
@@ -13,8 +13,6 @@ public class ArrayDemo {
             myElementArray.add(100 * i);
         }
         loop(myElementArray);
-
-
 
         Scanner myScanner = new Scanner(System.in);
 
