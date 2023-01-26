@@ -13,7 +13,19 @@ public class ArrayDemo {
         }
 
         Scanner myScanner = new Scanner(System.in);
-        System.out.println("Please enter an integer number: ");
-        myElementArray[10] = myScanner.nextInt();
+
+
+        try
+        {
+            System.out.println("Please enter an integer number: ");
+            myElementArray[10] = myScanner.nextInt();
+        }
+        catch (ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("Cannot proceed. The index is out of bounds.");
+            System.out.println(e);
+        }
+
+        System.out.println("\n\nThe program ended.");
     }
 }
